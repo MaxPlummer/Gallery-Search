@@ -1,5 +1,4 @@
-import React from 'react';
-import { useRef, useEffect } from "react";
+import React, { useRef, useEffect } from "react";
 
 function Search({ filterUpdate, filterText }) {
     // useRef() to allow input to be mutable for when it is being typed into the search bar
