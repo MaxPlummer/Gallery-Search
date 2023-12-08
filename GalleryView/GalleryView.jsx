@@ -74,11 +74,11 @@ export default function GalleryView({searchParams,setSearchParams,filterText, pr
 
         return (
             <div key={directory.id} id='gallery-class-card'>
-                <div id='card-upper-content-container' onClick={() => handleOpenGallery(index, true)}>
+                <div id='card-upper-content-container' onClick={() => {}} onKeyDown={this.handleOpenGallery(index, true)}>
                     <img src={placeholderImage} alt='placeholder'/>
                 </div>
                 <div id='card-lower-content-container'>
-                    <div id='card-lower-left-content-container' onClick={() => handleOpenGallery(index, true)}>
+                    <div id='card-lower-left-content-container' onClick={() => {}} onKeyDown={this.handleOpenGallery(index, true)}>
                         {directory.name}
                     </div>
                     <ProjectPage
